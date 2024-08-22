@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #a18cd1 0%, #fbc2eb 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #5a5a5a;
+    font-size: 2rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+h1 i {
+    margin-right: 10px;
+}
+
+#noteInput {
+    width: 60%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6f42c1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #5a31a0;
+}
+
+.note {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.note .timestamp {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.note .deleteButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #dc3545;
+    font-size: 1.2em;
+}
+
+.note .deleteButton:hover {
+    color: #a82330;
+}
+
+/* Style for textarea */
+.note textarea {
+    color: black;
+    background-color: transparent;
+    /* border: 1px solid #ccc; Optional border */
+    padding: 8px;
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+    resize: none;
+    width: 50%;
+    
+}
+
+/* Hide Done button initially */
+.doneButton {
+    display: none;
+}

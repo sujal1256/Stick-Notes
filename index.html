@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Notes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1><i class="fas fa-sticky-note"></i> Notes</h1>
+        <textarea
+          id="noteInput"
+          placeholder="Type your note here..."
+        ></textarea>
+        <button id="addNoteButton">
+          <i class="fas fa-pencil-alt"></i> Create Notes
+        </button>
+      </div>
+      <div id="notesContainer">
+        <!-- Pre-created notes -->
+        <div class="note">
+          <p disabled="true">This is note 1</p>
+          <div class="timestamp">Created on: 2024-08-22 10:00 AM</div>
+          <button class="editButton"><i class="fa fa-edit"></i> Edit</button>
+          <button class="doneButton" style="display: none">
+            <i class="fa fa-check"></i> Done
+          </button>
+          <button class="deleteButton"><i class="fa fa-trash-alt"></i></button>
+        </div>
+        <div class="note">
+          <p disabled="true">This is note 2</p>
+          <div class="timestamp">Created on: 2024-08-22 11:00 AM</div>
+          <button class="editButton"><i class="fa fa-edit"></i> Edit</button>
+          <button class="doneButton" style="display: none">
+            <i class="fa fa-check"></i> Done
+          </button>
+          <button class="deleteButton"><i class="fa fa-trash-alt"></i></button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+      integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
