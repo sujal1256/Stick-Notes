@@ -57,14 +57,12 @@ button {
     cursor: pointer;
     display: flex;
     align-items: center;
+    gap: 10px;
 }
+
 
 button i {
     margin-right: 5px;
-}
-
-button:hover {
-    background-color: #5a31a0;
 }
 
 .note {
@@ -82,26 +80,11 @@ button:hover {
     margin-top: 10px;
 }
 
-.note .deleteButton {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: #dc3545;
-    font-size: 1.2em;
-}
-
-.note .deleteButton:hover {
-    color: #a82330;
-}
-
 /* Style for textarea */
 .note textarea {
     color: black;
     background-color: transparent;
-    /* border: 1px solid #ccc; Optional border */
+    border: 2px solid rgb(245, 243, 243); 
     padding: 8px;
     font-size: 1em;
     line-height: 1.5;
@@ -109,11 +92,48 @@ button:hover {
     font-weight: normal;
     overflow: hidden;
     resize: none;
-    width: 50%;
+    width: 100%;
+
     
 }
 
 /* Hide Done button initially */
 .doneButton {
     display: none;
+}
+
+.editButton{
+    background-color: transparent;
+    color: grey;
+    font-size: 1.4em;
+}
+.editButton:hover{
+    color: rgb(81, 78, 78);
+}
+.deleteButton{
+    background-color: transparent;
+    color: #dc3545;
+    font-size: 1.4em;
+
+}
+.deleteButton:hover{
+    color: #a82330;
+    background-color: transparent;
+}
+.textarea_buttons{
+    /* background-color: red; */
+    display: flex;
+}
+.createButton{
+    background-color: #6f42c1;
+}
+.createButton:hover{
+    background-color: #3e1689;
+}
+.buttons{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+
 }
